@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 task 4</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        var cityArr = ['Kharchi','Lahore','Faisalabad','Quetta','Punjab','KPK'];
+
+        var i =0;
+        for( i=0 ;i= cityArr.length; i++){
+            var selectCityOne = prompt(`Select city from the list:-${cityArr} `);
+            firstLetter = selectCityOne.substring(0,1);
+            console.log(firstLetter)
+            var firstLetterCapital = firstLetter.toUpperCase();
+            var strExcludeFirstLetter = selectCityOne.substring(1, strExcludeFirstLetter);
+            console.log(strExcludeFirstLetter)
+            result = firstLetterCapital + strExcludeFirstLetter;
+            break;
+
+
+        }
+       
+        document.write(`City list is <br> ${cityArr}<br>`);
+        document.write(`your did select the ${result}`)
+
+
+
+
+
+
+        // var arr=['red','blue','green','Orange','navy','golden']
+        //         var userIndexNum= parseInt(prompt("Enter the index number"));
+        //         var userData=prompt('Enter the Element  for deleting')
+        //         document.write(`old array is ${arr}<br>`);
+        //        var result = arr.splice(userIndexNum,userData)
+               
+        //         document.write(`New array is ${arr}`)
+        
+        
+        
+        
+        </script>
+</body>
+</html>

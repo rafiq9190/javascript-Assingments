@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 4 task-9</title>
+</head>
+<body>
+    
+    <script>
+ var rawData ="<p><strong><em>Only print this</em></strong></p>";
+        var firstReplace =rawData.replace(/<p><strong><em>/g,"");
+            console.log(firstReplace);
+            var secReplace =firstReplace.replace('</em></strong></p>','')
+            console.log(secReplace)
+            document.write(`${rawData} after removing HTML Tags<br>OutPut:-<br>${secReplace}`)
+    
+
+
+
+    </script>
+
+</body>
+</html>

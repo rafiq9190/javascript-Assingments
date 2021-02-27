@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 8</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        var fVal=parseInt(prompt('Enter the first value',));
+        
+        var operator= prompt('Enter the operation like + , -, *, /');
+        var sVal=parseInt(prompt('Enter the Second value',))
+       switch(operator ){
+           case '+':
+               document.write(`your Sum of ${fVal}and ${sVal}is${fVal + sVal}`)
+               break
+            case '-':
+            document.write(`your Substraction of ${fVal}and ${sVal}is${fVal - sVal}`);
+                break
+            case '*':
+            document.write(`your Multiplication of ${fVal}and ${sVal}is${fVal * sVal}`)
+                break
+            case '%':
+            document.write(`your Modulus is ${fVal % sVal}`);
+                break
+            case '/':
+            document.write(`your Division of ${fVal}and ${sVal}is${fVal / sVal}`)
+                
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 4 task-15</title>
+</head>
+<body>
+    
+    <script>
+        var userDOB = prompt('Enter your Date of birth with m/d/y format')
+        var dob = new Date(userDOB);  
+    //calculate month difference from current date in time  
+    var month_diff = Date.now() - dob.getTime();  
+      
+    //convert the calculated difference in date format  
+    var age_dt = new Date(month_diff);   
+      
+    //extract year from date      
+    var year = age_dt.getUTCFullYear();  
+      
+    //now calculate the age of the user  
+    var age = Math.abs(year - 1970);  
+    console.log(age)
+      
+    //display the calculated age  
+    document.write(`your Age is ${age}<br>your birth year ${year}`);  
+    </script>
+</body>
+</html>

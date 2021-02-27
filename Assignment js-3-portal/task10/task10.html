@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 3 task 10</title>
+</head>
+<body>
+    
+    <script>
+        var arr =[20,53,78,4,91,12];
+        var newArr = []
+        document.write(`The array without sort ${arr}<br>`);
+        arr.sort((a,b) => {
+            if(a > b) return 1;
+            if(a < b) return -1;
+            return 0;
+        });
+        
+        console.log(arr)
+        document.write(`Array after sorting ${arr}`)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 task 4</title>
+</head>
+<body>
+    
+
+<script>
+
+    var totalMarks=parseInt(prompt('Enter the Total Marks'));
+    var sub1 =parseInt(prompt('Enter the 1st subject marks'));
+    var sub2 =parseInt(prompt('Enter the 2st subject marks'));
+    var sub3 =parseInt(prompt('Enter the 3st subject marks'));
+    var marksObtain= sub1 + sub2 +sub3;
+    var percentage =marksObtain/totalMarks*100;
+document.write(`Total Marks is ${totalMarks}<br>`);
+    document.write( `Marks Obtained ${marksObtain}<br>`);
+    document.write(`the Percentage is ${percentage}%<br>`)
+
+    if(percentage >= 90 && percentage <=100 ){
+        document.write(`Grade : A<br>`);
+        document.write(`Excellent`)
+    }else if(percentage >= 80 && percentage <=90 ){
+        document.write(`Grade : B`)
+        document.write(`Good`)
+    }else if(percentage >= 70 && percentage <=80){
+        document.write(`Grade : C`);
+        document.write(`Need to be improve for Good`)
+
+    }else if(percentage >= 60 && percentage <=70){
+        document.write(`Grade : Need to be imporve`);
+    }else{
+        document.write(`Grade : Fail`)
+    }
+
+
+
+</script>
+
+</body>
+</html>
